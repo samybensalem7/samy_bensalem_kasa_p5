@@ -1,5 +1,13 @@
+import Banner from "../../components/Banner/Banner"
+import React from 'react';
+
+
 function Home() {
-    return <h1>ici les logements</h1>;
-  }
-  
-  export default Home;
+  return (
+    <div>
+      <Banner/>
+    </div>
+  );
+}
+
+export default Home;
