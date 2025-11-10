@@ -1,6 +1,19 @@
 .cardsContainer {
-  background-color: gray;
+  background-color: #e3e3e3;
   margin-left: 3%;
   margin-right: 3%;
   border-radius: 10px;
+  padding-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+@media (max-width: 767.98px) {
+  .cardsContainer {
+    flex-direction: column;
+    background-color: transparent;
+  }
 }

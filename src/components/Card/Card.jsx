@@ -3,8 +3,8 @@ import "./Card.scss";
 function Card({ title, cover }) {
   return (
     <div className="card">
-      <img src={cover} alt={`Photo du logement ${title} `} />
-      <h3>{title}</h3>
+      <img className="card__image" src={cover} alt={`Photo du logement ${title} `} />
+      <h3 className="card__title">{title}</h3>
     </div>
   );
 }
