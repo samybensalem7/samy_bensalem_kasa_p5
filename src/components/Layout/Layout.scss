@@ -1,9 +1,10 @@
 .layout-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* prend toute la hauteur de l'écran */
+    min-height: 100vh; 
   }
   
   main {
-    flex: 1; /* prend tout l’espace restant et pousse le footer vers le bas */
+    flex: 1; 
   }
+

@@ -55,3 +55,11 @@ $text-color: #ffffff;
   padding-bottom: 10px;
   outline: none;
 }
+
+@media (max-width: 767.98px) {
+.collapse{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+}
