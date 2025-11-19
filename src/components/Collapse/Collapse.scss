@@ -1,0 +1,57 @@
+$collapse-margin: 15%;
+$primary-color: #ff6f61;
+$text-color: #ffffff;
+
+.collapse {
+  background-color: $primary-color;
+  max-height: 40px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-right: $collapse-margin;
+  margin-left: $collapse-margin;
+  border-radius: 6px;
+  transition: max-height 0.2s ease-in-out;
+
+  &.open {
+    max-height: 1000px;
+  }
+}
+
+.chevron {
+  position: absolute;
+  right: 15px;
+  transition: transform 0.4s;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.collapse__container {
+  margin-bottom: 12px;
+  margin-left: $collapse-margin;
+  margin-right: $collapse-margin;
+}
+
+.collapse__text {
+  overflow: hidden;
+  color: $text-color;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+}
+
+.collapse__header {
+  color: $text-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  background-color: #ff6f61;
+  height: 40px;
+  padding-bottom: 10px;
+  outline: none;
+}
