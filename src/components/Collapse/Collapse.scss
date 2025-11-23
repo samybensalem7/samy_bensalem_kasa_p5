@@ -19,18 +19,12 @@ $text-color: #ffffff;
 
 .chevron {
   position: absolute;
-  right: 15px;
+  right: 20px;
   transition: transform 0.4s;
 
   &.open {
     transform: rotate(180deg);
   }
-}
-
-.collapse__container {
-  margin-bottom: 12px;
-  margin-left: $collapse-margin;
-  margin-right: $collapse-margin;
 }
 
 .collapse__text {
@@ -42,11 +36,13 @@ $text-color: #ffffff;
 }
 
 .collapse__header {
+  font-weight: bold;
   color: $text-color;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
+  margin-left: 1%;
   width: 100%;
   position: relative;
   margin-bottom: 0;
