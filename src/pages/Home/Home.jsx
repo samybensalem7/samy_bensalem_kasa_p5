@@ -3,18 +3,20 @@ import React from "react";
 import logements from "../../data/logements.json";
 import Card from "../../components/Card/Card";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="Samy">
+    <div>
       <Banner />
       <div className="cardsContainer">
         {logements.map((logement) => (
+        <Link key={logement.id} to={`/logement/${logement.id}`}>
           <Card
-            key={logement.id}
             title={logement.title}
             cover={logement.cover}
           />
+          </Link>
         ))}
       </div>
     </div>
@@ -22,3 +24,6 @@ function Home() {
 }
 
 export default Home;
+
+
+

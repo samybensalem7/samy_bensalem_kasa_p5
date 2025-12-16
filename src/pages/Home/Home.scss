@@ -3,12 +3,18 @@
   margin-left: 3%;
   margin-right: 3%;
   border-radius: 10px;
-  padding-top: 1%;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 1%;
-  padding-right: 1%;
+}
+
+.cardsContainer a {
+  width: 30%;
+  margin-bottom: 30px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 767.98px) {
