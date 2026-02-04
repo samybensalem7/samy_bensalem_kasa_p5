@@ -1,0 +1,24 @@
+.img-pictures{
+    width: 100%;
+    border-radius: 30px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 16% 50%;
+}
+
+.chevron-right{
+    position: absolute;
+    right: 70px;
+    top: 400px;
+    color:white;
+    font-size: 80px;
+}
+
+.chevron-left{
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    top: 420px;
+    font-size: 80px;
+    color: white;
+}
