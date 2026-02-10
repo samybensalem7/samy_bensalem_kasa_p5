@@ -1,15 +1,20 @@
+.slideshow-container{
+    margin-bottom: 1%;
+}
+
 .img-pictures{
     width: 100%;
     border-radius: 30px;
     height: 600px;
     object-fit: cover;
     object-position: 16% 50%;
+    overflow: hidden;
 }
 
 .chevron-right{
     position: absolute;
     right: 70px;
-    top: 400px;
+    top: 410px;
     color:white;
     font-size: 80px;
 }
@@ -18,7 +23,16 @@
     position: absolute;
     text-align: left;
     left: 70px;
-    top: 420px;
+    top: 425px;
     font-size: 80px;
     color: white;
 }
+
+span{
+    color: white;
+    position: absolute;
+    right: 50%;
+    top: 700px;
+    font-size: 20px;
+}
+
