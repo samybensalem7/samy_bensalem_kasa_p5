@@ -9,17 +9,21 @@ $primary-color: #ff6f61;
 .logements-informations {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
 }
 
 .host-informations {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .host-picture {
   border-radius: 60px;
-  height: 60%;
-  border: 60px;
+  height: 49%;
+  width: 48%;
 }
 
 h4 {
@@ -55,18 +59,24 @@ h3 {
     padding: 5px 20px;
     border-radius: 10px;
     font-size: 14px;
-    min-width: 100px;
     text-align: center;
-    position: static; // sert à placer a un document dans l'ordre du document
+    position: static; 
     margin-bottom: 3%;
   }
 }
-
 .rating {
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: 77px;
-  right: 55px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.host-and-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
 }
 
 .collapse-logement {
@@ -77,5 +87,65 @@ h3 {
     flex: 1;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logements-informations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collapse-logement {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .chevrons img {
+    height: 40px;
+  }
+
+  .host-and-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 6%;
+  }
+
+  .host-informations {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+
+    h4 {
+      margin: 0;
+      width: auto;
+      text-align: right;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .host-picture {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .rating {
+    display: flex;
+    gap: 5px;
+
+    img {
+      height: 15px;
+      width: 15px;
+    }
   }
 }

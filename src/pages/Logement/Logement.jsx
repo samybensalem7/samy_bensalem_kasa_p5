@@ -26,14 +26,21 @@ function Logement() {
             ))}
           </div>
         </div>
-        <div className="host-informations">
-          <h4>{logementActive.host.name} </h4>
-          <img className="host-picture" src={logementActive.host.picture} />
+        <div className="host-and-rating">
+          <div className="host-informations">
+            <h4>{logementActive.host.name}</h4>
+            <img
+              className="host-picture"
+              src={logementActive.host.picture}
+              alt={logementActive.host.name}
+            />
+          </div>
           <div className="rating">
             {number.map((num, index) => (
               <img
                 key={index}
                 src={num <= logementActive.rating ? starR : starW}
+                alt="star"
               />
             ))}
           </div>
