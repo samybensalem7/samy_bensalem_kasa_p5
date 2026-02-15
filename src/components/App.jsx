@@ -1,14 +1,13 @@
 import { BrowserRouter } from 'react-router-dom';
-import AppRouter from './Router/AppRouter';  // Nom plus explicite
+import AppRouter from './Router/AppRouter';
 import Layout from './Layout/Layout.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 function App() {  
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}> {/* juste pour enlever les warnings dans la console */}
       <Layout>
-      <AppRouter />
+        <AppRouter />
       </Layout>
     </BrowserRouter>
   )

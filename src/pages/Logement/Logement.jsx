@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import logements from "../../data/logements.json";
 import "./logement.scss";
@@ -10,6 +10,11 @@ function Logement() {
   const { id } = useParams();
 
   const logementActive = logements.find((l) => l.id === id);
+
+  if (!logementActive){
+    return(
+    <Navigate to="/error" replace/>)
+  }
 
   const number = [1, 2, 3, 4, 5];
 

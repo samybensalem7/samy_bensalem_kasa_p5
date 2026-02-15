@@ -1,29 +1,39 @@
 .cardsContainer {
-  background-color: #e3e3e3;
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: flex-start; 
+  gap: 30px;             
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
   margin-left: 3%;
   margin-right: 3%;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 3%;
 }
 
 .cardsContainer a {
-  width: 30%;
-  margin-bottom: 30px;
+  width: 32%;
+  margin-bottom: 5px;
   display: block;
   text-decoration: none;
   color: inherit;
 }
-
+@media (max-width: 1024px) {
+  .cardsContainer a {
+  width: 47%; 
+}
 @media (max-width: 767.98px) {
   .cardsContainer {
     flex-direction: column;
     background-color: transparent;
+  
+  
   }
 
   .cardsContainer a {
-    width: 100%;
-  }
+    width: 100%;}
+
+}
+
+
 }
