@@ -1,24 +1,26 @@
-.about__banner{
+.about {
+  &__banner {
     margin-left: 3%;
     margin-right: 3%;
     height: 240px;
     overflow: hidden;
     margin-bottom: 3%;
     border-radius: 20px;
-}
+  }
 
-.about__img{
+  &__img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     object-position: 50% 52%;
-}
+  }
 
-@media (max-width: 767.98px) {
-    .about__banner {
+  @media (max-width: 767.98px) {
+    &__banner {
       height: 110px;
       justify-content: flex-start;
       margin-top: 5%;
       margin-bottom: 5%;
     }
   }
+}
