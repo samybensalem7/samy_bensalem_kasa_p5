@@ -41,15 +41,15 @@
     font-size: 20px;
     z-index: 10;
   }
+}
 
-  @media (max-width: 767.98px) {
-    &__picture {
-      height: 40vh;
-    }
+@media (max-width: 767.98px) {
+  .slideshow__picture {
+    height: 40vh;
+  }
 
-    &__counter {
-      display: none;
-    }
+  .slideshow__counter {
+    display: none;
   }
 
   .chevrons {
