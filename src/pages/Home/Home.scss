@@ -1,10 +1,10 @@
 .cardsContainer {
   display: flex;
-  flex-wrap: wrap;      
-  justify-content: flex-start; 
-  gap: 30px;             
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
   padding: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
   margin-left: 3%;
   margin-right: 3%;
@@ -20,20 +20,16 @@
 }
 @media (max-width: 1024px) {
   .cardsContainer a {
-  width: 47%; 
-}
-@media (max-width: 767.98px) {
-  .cardsContainer {
-    flex-direction: column;
-    background-color: transparent;
-  
-  
+    width: 47%;
   }
+  @media (max-width: 767.98px) {
+    .cardsContainer {
+      flex-direction: column;
+      background-color: transparent;
+    }
 
-  .cardsContainer a {
-    width: 100%;}
-
-}
-
-
+    .cardsContainer a {
+      width: 100%;
+    }
+  }
 }

@@ -14,8 +14,8 @@ function Slideshow({ pictures }) {
   };
 
   return (
-    <div className="slideshow-container ">
-      <img className="img-pictures" src={pictures[currentIndex]} />
+    <div className="slideshow__content ">
+      <img className="slideshow__picture" src={pictures[currentIndex]} />
 
       {pictures.length > 1 && (
         <>
@@ -31,7 +31,7 @@ function Slideshow({ pictures }) {
               className="chevron-right"
             />
           </div>
-          <span className="active-counter">
+          <span className="slideshow__counter">
             {currentIndex + 1} / {pictures.length}
           </span>
         </>

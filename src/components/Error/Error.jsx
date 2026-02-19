@@ -1,9 +1,6 @@
 import "./Error.scss"
 import { Link } from "react-router-dom";
 
-
-
-
 function Error(){
     return (
         <div className="error">

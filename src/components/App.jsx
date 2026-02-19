@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {  
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}> {/* juste pour enlever les warnings dans la console */}
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}> {/* pour enlever les warnings dans la console */}
       <Layout>
         <AppRouter />
       </Layout>

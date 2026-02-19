@@ -1,152 +1,152 @@
 $primary-color: #ff6f61;
 
-.logements-container {
-  margin-left: 3%;
-  margin-right: 3%;
-  color: #ff6f61;
-}
-
-.logements-informations {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 20px;
-}
-
-.host-informations {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  align-items: center;
-}
-
-.host-picture {
-  border-radius: 60px;
-  height: 49%;
-  width: 48%;
-}
-
-h4 {
-  margin-right: -10px;
-  width: 50px;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  color: #ff6b6b;
-  font-size: 2em;
-  margin-bottom: 3%;
-}
-
-h3 {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  margin-bottom: 3%;
-  margin-top: 1%;
-}
-
-.logements-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 15px;
-
-  span {
-    background-color: $primary-color;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    text-align: center;
-    position: static; 
-    margin-bottom: 3%;
+.logement {
+  &__content {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: $primary-color;
   }
-}
-.rating {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-  gap:3px;
-}
 
-.host-and-rating {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 20px;
-}
-
-.collapse-logement {
-  display: flex;
-  gap: 20px;
-
-  .collapse {
-    flex: 1;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .logements-informations {
+  &__informations {
     display: flex;
-    flex-direction: column;
-  }
-
-  .collapse-logement {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .chevrons img {
-    height: 40px;
-  }
-
-  .host-and-rating {
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 6%;
+    align-items: flex-end;
+    margin-top: 20px;
   }
 
-  .host-informations {
+  &__host {
     display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
     align-items: center;
-    gap: 10px;
-    margin-top: 0;
 
     h4 {
-      margin: 0;
-      width: auto;
-      text-align: right;
-      font-size: 12px;
-      display: flex;
-      flex-direction: column;
+      margin-right: -10px;
+      width: 50px;
     }
   }
 
-  .host-picture {
-    height: 52px;
-    width: 52px;
-    border-radius: 50%;
-    object-fit: cover;
+  &__host--picture {
+    border-radius: 60px;
+    height: 49%;
+    width: 48%;
   }
 
-  .rating {
-    display: flex;
-    gap: 5px;
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    color: #ff6b6b;
+    font-size: 2em;
+    margin-bottom: 3%;
+  }
 
-    img {
-      height: 15px;
-      width: 15px;
+  &__location {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    margin-bottom: 3%;
+    margin-top: 1%;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+
+    span {
+      background-color: $primary-color;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px;
+      font-size: 14px;
+      text-align: center;
+      position: static;
+      margin-bottom: 3%;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    gap: 3px;
+  }
+
+  &__host-and-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__collapse {
+    display: flex;
+    gap: 20px;
+
+    .collapse {
+      flex: 1;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__informations {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__collapse {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__host-and-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 6%;
+    }
+
+    &__host {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 0;
+
+      h4 {
+        margin: 0;
+        width: auto;
+        text-align: right;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__host--picture {
+      height: 52px;
+      width: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__rating {
+      display: flex;
+      gap: 5px;
+
+      img {
+        height: 15px;
+        width: 15px;
+      }
     }
   }
 }
