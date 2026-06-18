@@ -18,6 +18,11 @@
   text-decoration: none;
   color: inherit;
 }
+
+.home_content .banner__img {
+  filter: brightness(0.5);
+}
+
 @media (max-width: 1024px) {
   .cardsContainer a {
     width: 47%;
